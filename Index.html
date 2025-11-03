@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleMold B2B Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple transition for slides */
+        .slide {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
+
+    <div class="w-full max-w-5xl bg-white rounded-lg shadow-2xl overflow-hidden">
+        <!-- Slide Container -->
+        <div id="slide-container" class="relative w-full aspect-[16/9]">
+            
+            <!-- Slide 1: The Problem -->
+            <div data-slide="0" class="slide w-full h-full p-8 md:p-16 flex flex-col justify-center items-center text-center absolute top-0 left-0 opacity-100">
+                <div class="max-w-3xl">
+                    <h2 class="text-xl md:text-2xl font-semibold text-blue-800 mb-4">The E-Commerce Pain Point</h2>
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Returns are the silent profit killer.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-12">Returns cost the Indian fashion industry <span class="font-bold text-red-600">20-35% of revenue</span>, destroying margins through reverse logistics, reprocessing, and dead inventory.</p>
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg text-left">
+                        <p class="text-xl md:text-3xl font-bold text-red-700">For every ₹10,000 in sales, you risk losing up to ₹3,500 to returns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: The Solution -->
+            <div data-slide="1" class="slide w-full h-full p-8 md:p-16 flex flex-col justify-center items-center text-center absolute top-0 left-0 opacity-0 hidden">
+                <div class="w-full max-w-4xl">
+                    <h2 class="text-xl md:text-2xl font-semibold text-blue-800 mb-4">The StyleMold Solution</h2>
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-10">We are a human-powered sales filter.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-12">We don't just advertise your product; we <span class="font-bold">prescribe it</span>. Our expert stylists ensure a perfect match *before* the customer ever clicks 'buy'.</p>
+                    
+                    <!-- Funnel Visual -->
+                    <div class="flex flex-col md:flex-row justify-around w-full gap-4 md:gap-8">
+                        <!-- Step 1 -->
+                        <div class="flex-1 flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm">
+                            <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">1. Initial Request</h3>
+                            <p class="text-gray-600 text-sm">Customer describes their specific need, budget, size, and aesthetic.</p>
+                        </div>
+                        <!-- Arrow -->
+                        <div class="flex items-center justify-center text-blue-600 rotate-90 md:rotate-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex-1 flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm">
+                            <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">2. Expert Advice</h3>
+                            <p class="text-gray-600 text-sm">A real stylist analyzes the request and finds the *perfect* item from your inventory.</p>
+                        </div>
+                        <!-- Arrow -->
+                        <div class="flex items-center justify-center text-blue-600 rotate-90 md:rotate-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex-1 flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm">
+                            <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">3. Qualified Sale</h3>
+                            <p class="text-gray-600 text-sm">We send a high-intent, pre-vetted customer to your checkout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: The Guarantee -->
+            <div data-slide="2" class="slide w-full h-full p-8 md:p-16 flex flex-col justify-center items-center text-center absolute top-0 left-0 opacity-0 hidden">
+                <div class="max-w-3xl">
+                    <h2 class="text-xl md:text-2xl font-semibold text-blue-800 mb-4">The Guarantee</h2>
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-12">We deliver sales that <span class="text-green-600">stick.</span></h1>
+
+                    <div class="flex flex-col md:flex-row justify-around w-full gap-8">
+                        <div class="flex-1 p-8 bg-red-50 rounded-lg shadow-lg border-2 border-red-200">
+                            <h3 class="text-lg font-semibold text-red-700 mb-2">Industry Average</h3>
+                            <p class="text-5xl md:text-7xl font-bold text-red-600">20-35%</p>
+                            <p class="text-xl font-semibold text-red-700">Return Rate</p>
+                        </div>
+                        <div class="flex-1 p-8 bg-green-50 rounded-lg shadow-lg border-2 border-green-200">
+                            <h3 class="text-lg font-semibold text-green-700 mb-2">StyleMold Guarantee</h3>
+                            <p class="text-5xl md:text-7xl font-bold text-green-600">&lt;10%</p>
+                            <p class="text-xl font-semibold text-green-700">Return Rate</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg md:text-xl text-gray-600 mt-12">Our CVR is <span class="font-bold">3x higher</span> because the fit, budget, and aesthetic are pre-vetted. You get a sale, and you <span class="font-bold">keep</span> the revenue.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4: The Partnership Model -->
+            <div data-slide="3" class="slide w-full h-full p-8 md:p-16 flex flex-col justify-center items-center text-center absolute top-0 left-0 opacity-0 hidden">
+                <div class="max-w-4xl">
+                    <h2 class="text-xl md:text-2xl font-semibold text-blue-800 mb-4">Our Partnership Model</h2>
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-12">A Win-Win with Zero CAC.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-10">We offer two simple, zero-risk paths to acquire high-LTV customers.</p>
+
+                    <div class="flex flex-col md:flex-row justify-center w-full gap-8 text-left">
+                        <!-- Path 1 -->
+                        <div class="flex-1 p-8 bg-blue-50 rounded-lg shadow-lg border-2 border-blue-200">
+                            <h3 class="text-2xl font-bold text-blue-900 mb-4">Path 1: Affiliate (Low Risk)</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>You get zero-cost, high-intent traffic.</li>
+                                <li>We earn a standard commission on sales.</li>
+                                <li>No complex integration needed.</li>
+                                <li><span class="font-semibold">Best for:</span> Proving our low-return model at volume.</li>
+                            </ul>
+                        </div>
+                        <!-- Path 2 -->
+                        <div class="flex-1 p-8 bg-green-50 rounded-lg shadow-lg border-2 border-green-200">
+                            <h3 class="text-2xl font-bold text-green-900 mb-4">Path 2: Wholesale (High Margin)</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>You get guaranteed, pre-paid bulk orders.</li>
+                                <li>We secure inventory for our client base.</li>
+                                <li>Dramatically simplifies your forecasting.</li>
+                                <li><span class="font-semibold">Best for:</span> Your high-margin, core products.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: The Next Step -->
+            <div data-slide="4" class="slide w-full h-full p-8 md:p-16 flex flex-col justify-center items-center text-center absolute top-0 left-0 opacity-0 hidden">
+                <div class="max-w-3xl">
+                    <h2 class="text-xl md:text-2xl font-semibold text-blue-800 mb-4">The Next Step</h2>
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-12">Let's Prove It.<br> (With Zero Risk to You)</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-10">We propose a 90-day pilot program to prove our <10% return rate on a small batch of your high-margin products.</p>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md text-left max-w-lg mx-auto mb-10">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Pilot Program Goals:</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><span class="font-semibold">Validate:</span> Achieve a <10% return rate on your SKUs.</li>
+                            <li><span class="font-semibold">Prove:</span> Demonstrate a superior profit margin vs. your current marketplace channels.</li>
+                            <li><span class="font-semibold">Scale:</span> Build a data-backed case for a long-term partnership.</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://wa.me/918421413992?text=Hi!%20I'm%20interested%20in%20the%20StyleMold%20B2B%20pilot%20program%20and%20would%20like%20to%20book%20a%2015-minute%20call." target="_blank" rel="noopener noreferrer" class="inline-block bg-green-600 text-white text-xl font-semibold px-10 py-4 rounded-lg shadow-lg hover:bg-green-700 transition-colors">
+                        Book via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <footer class="flex justify-between items-center p-4 bg-gray-800 text-white">
+            <div>
+                <span id="slide-counter" class="text-sm">1 / 5</span>
+            </div>
+            <div class="flex gap-2">
+                <button id="prev-btn" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                    &larr; Prev
+                </button>
+                <button id="next-btn" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+                    Next &rarr;
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('[data-slide]');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideCounter = document.getElementById('slide-counter');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.classList.remove('hidden', 'opacity-0');
+                        slide.classList.add('opacity-100');
+                    } else {
+                        slide.classList.add('hidden', 'opacity-0');
+                        slide.classList.remove('opacity-100');
+                    }
+                });
+
+                // Update counter
+                slideCounter.textContent = `${index + 1} / ${totalSlides}`;
+
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === totalSlides - 1;
+            }
+
+            // Event Listeners
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Show the first slide initially
+            showSlide(0);
+        });
+    </script>
+
+</body>
+</html>
